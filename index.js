@@ -641,9 +641,8 @@ app.router("get", "/", async (ctx) => {
   </head>
   <body>
     <section>
-      <h4>直链下载</h4>
-      <input value="" id="q" name="q" type="text" placeholder="文件ID (GoogleDrive / Lanzou / 19)" /><button onClick="handleDownload()">下载</button><button onClick="handleDownload('preview')">预览</button>
-      <button onClick="handleDownload('json')">JSON</button><button onClick="handleDownload('media')">转码播放(仅限Google)</button>
+      <h4>GDRIVE DDL</h4>
+      <input value="" id="q" name="q" type="text" placeholder="file ID (GoogleDrive / Lanzou / 19)" /><button onClick="handleDownload('json')">JSON</button>
     </section>
     <script>
       function handleDownload(output) {
