@@ -582,6 +582,12 @@ app.router("get", "/", async (ctx) => {
       }
     </style>
     <style>
+      body {
+        background: #202020;
+        display: fixed;
+        justify-content: center;
+        align-items: center;
+     }
       section {
         width: 650px;
         background: 0 0;
@@ -630,19 +636,33 @@ app.router("get", "/", async (ctx) => {
         border: 1px solid#c6c6c6;
         background-color: #f8f8f8;
       }
-      h4 {
+     .neon {
+       font-family: 'Londrina Outline', cursive;
         font-size: 24px;
         margin-bottom: 48px;
         text-align: center;
-        color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase;
         font-weight: 400;
+        color: #fff;
+        letter-spacing: 0.15em;
+      }
+      .pink {
+        text-shadow: 
+        0 0 5px #ff7bac,
+        0 0 10px #ff7bac,
+        0 0 20px #ff7bac,
+        0 0 40px #ff7bac,
+        0 0 80px #ff7bac,
+        0 0 90px #ff7bac,
+        0 0 100px #ff7bac,
+        0 0 150px #ff7bac;
       }
     </style>
   </head>
   <body>
     <section>
       <h4>GDRIVE DDL</h4>
-      <input value="" id="q" name="q" type="text" placeholder="file ID (GoogleDrive / Lanzou / 19)" /><button onClick="handleDownload('json')">JSON</button>
+      <input value="" id="q" name="q" type="text" placeholder="file ID (GoogleDrive / Lanzou / 19)" /><button class="neon pink" onClick="handleDownload('json')">JSON</button>
     </section>
     <script>
       function handleDownload(output) {
