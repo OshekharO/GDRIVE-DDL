@@ -572,17 +572,16 @@ app.router("get", "/link/:id", async (ctx) => {
 
 app.router("get", "/", async (ctx) => {
    ctx.body = `<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>LINK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>GDRIVE DDL</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/cheems/goindex-extended/master/images/favicon-x.png" type="image/x-icon" />
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Roboto, Arial, PingFang SC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
-      }
-    </style>
-    <style>
-      body {
         background: #202020;
         display: fixed;
         justify-content: center;
@@ -637,7 +636,7 @@ app.router("get", "/", async (ctx) => {
         background-color: #f8f8f8;
       }
      .neon {
-       font-family: 'Londrina Outline', cursive;
+        font-family: 'Londrina Outline', cursive;
         font-size: 24px;
         margin-bottom: 48px;
         text-align: center;
